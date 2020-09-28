@@ -1,0 +1,15 @@
+require "TSLib"
+--仅支持 TSLib v1.3.1 以及以上版本
+showTextView("我是一个简单的文字视图","id1",300,100,800,300,"center","ffffff","3982ff",20,1,1,1)
+mSleep(2000)
+showTextView("我只有一行代码","id2",300,100,800,300,"center","ffffff","819830",20,1,1,1)
+mSleep(3000)
+showTextView("我胡汉三又回来啦","id1",300,100,800,300,"center","ffffff","3982ff",20,1,1,1)
+mSleep(1000)
+showTextView("不能覆盖前面的","id2",300,400,800,600,"center","ffffff","819830",20,1,1,1)
+mSleep(2000)
+showTextView("只有文字")
+mSleep(3000)
+showTextView("关闭视图")
+mSleep(3000)
+closeFw()
