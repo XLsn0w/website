@@ -1,0 +1,395 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		78825EEA2519EDAC00AF0ADF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78825EE92519EDAC00AF0ADF /* UIKit.framework */; };
+		78825EEC2519EDAC00AF0ADF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78825EEB2519EDAC00AF0ADF /* Foundation.framework */; };
+		78825EEE2519EDAC00AF0ADF /* CydiaSubstrate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78825EED2519EDAC00AF0ADF /* CydiaSubstrate.framework */; };
+		78825EF72519EDAC00AF0ADF /* Jailbreak.mm in Sources */ = {isa = PBXBuildFile; fileRef = 78825EF62519EDAC00AF0ADF /* Jailbreak.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		78825EE62519EDAC00AF0ADF /* Jailbreak.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = Jailbreak.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		78825EE92519EDAC00AF0ADF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		78825EEB2519EDAC00AF0ADF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		78825EED2519EDAC00AF0ADF /* CydiaSubstrate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CydiaSubstrate.framework; path = Library/Frameworks/CydiaSubstrate.framework; sourceTree = DEVELOPER_DIR; };
+		78825EF22519EDAC00AF0ADF /* control */ = {isa = PBXFileReference; lastKnownFileType = text; path = control; sourceTree = "<group>"; };
+		78825EF42519EDAC00AF0ADF /* Jailbreak-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Jailbreak-Prefix.pch"; path = "../Jailbreak-Prefix.pch"; sourceTree = "<group>"; };
+		78825EF52519EDAC00AF0ADF /* Jailbreak.xm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; path = Jailbreak.xm; sourceTree = "<group>"; };
+		78825EF62519EDAC00AF0ADF /* Jailbreak.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = Jailbreak.mm; sourceTree = "<group>"; };
+		78825EFB2519EDAC00AF0ADF /* Jailbreak.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Jailbreak.plist; sourceTree = "<group>"; };
+		78E6DA552521B03400A99FC8 /* Jailbreak-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Jailbreak-Bridging-Header.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		78825EE22519EDAC00AF0ADF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78825EEA2519EDAC00AF0ADF /* UIKit.framework in Frameworks */,
+				78825EEC2519EDAC00AF0ADF /* Foundation.framework in Frameworks */,
+				78825EEE2519EDAC00AF0ADF /* CydiaSubstrate.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		78825EDB2519EDAC00AF0ADF = {
+			isa = PBXGroup;
+			children = (
+				78825EEF2519EDAC00AF0ADF /* Jailbreak */,
+				78825EE82519EDAC00AF0ADF /* Frameworks */,
+				78825EE72519EDAC00AF0ADF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		78825EE72519EDAC00AF0ADF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				78825EE62519EDAC00AF0ADF /* Jailbreak.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		78825EE82519EDAC00AF0ADF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				78825EE92519EDAC00AF0ADF /* UIKit.framework */,
+				78825EEB2519EDAC00AF0ADF /* Foundation.framework */,
+				78825EED2519EDAC00AF0ADF /* CydiaSubstrate.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		78825EEF2519EDAC00AF0ADF /* Jailbreak */ = {
+			isa = PBXGroup;
+			children = (
+				78825EF52519EDAC00AF0ADF /* Jailbreak.xm */,
+				78825EF62519EDAC00AF0ADF /* Jailbreak.mm */,
+				78825EF02519EDAC00AF0ADF /* Package */,
+				78825EF32519EDAC00AF0ADF /* Supporting Files */,
+				78E6DA552521B03400A99FC8 /* Jailbreak-Bridging-Header.h */,
+			);
+			path = Jailbreak;
+			sourceTree = "<group>";
+		};
+		78825EF02519EDAC00AF0ADF /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				78825EF12519EDAC00AF0ADF /* DEBIAN */,
+				78825EF82519EDAC00AF0ADF /* Library */,
+			);
+			path = Package;
+			sourceTree = "<group>";
+		};
+		78825EF12519EDAC00AF0ADF /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				78825EF22519EDAC00AF0ADF /* control */,
+			);
+			path = DEBIAN;
+			sourceTree = "<group>";
+		};
+		78825EF32519EDAC00AF0ADF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				78825EF42519EDAC00AF0ADF /* Jailbreak-Prefix.pch */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		78825EF82519EDAC00AF0ADF /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				78825EF92519EDAC00AF0ADF /* MobileSubstrate */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		78825EF92519EDAC00AF0ADF /* MobileSubstrate */ = {
+			isa = PBXGroup;
+			children = (
+				78825EFA2519EDAC00AF0ADF /* DynamicLibraries */,
+			);
+			path = MobileSubstrate;
+			sourceTree = "<group>";
+		};
+		78825EFA2519EDAC00AF0ADF /* DynamicLibraries */ = {
+			isa = PBXGroup;
+			children = (
+				78825EFB2519EDAC00AF0ADF /* Jailbreak.plist */,
+			);
+			path = DynamicLibraries;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		78825EE32519EDAC00AF0ADF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		78825EE52519EDAC00AF0ADF /* Jailbreak */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 78825EFE2519EDAC00AF0ADF /* Build configuration list for PBXNativeTarget "Jailbreak" */;
+			buildPhases = (
+				78825EE02519EDAC00AF0ADF /* ShellScript */,
+				78825EE12519EDAC00AF0ADF /* Sources */,
+				78825EE22519EDAC00AF0ADF /* Frameworks */,
+				78825EE32519EDAC00AF0ADF /* Headers */,
+				78825EE42519EDAC00AF0ADF /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Jailbreak;
+			productName = Jailbreak;
+			productReference = 78825EE62519EDAC00AF0ADF /* Jailbreak.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		78825EDC2519EDAC00AF0ADF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1150;
+				TargetAttributes = {
+					78825EE52519EDAC00AF0ADF = {
+						CreatedOnToolsVersion = 11.5;
+						LastSwiftMigration = 1150;
+					};
+				};
+			};
+			buildConfigurationList = 78825EDF2519EDAC00AF0ADF /* Build configuration list for PBXProject "Jailbreak" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 78825EDB2519EDAC00AF0ADF;
+			productRefGroup = 78825EE72519EDAC00AF0ADF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				78825EE52519EDAC00AF0ADF /* Jailbreak */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		78825EE02519EDAC00AF0ADF /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/bin/md --xcbp-logos";
+		};
+		78825EE42519EDAC00AF0ADF /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/bin/md --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		78825EE12519EDAC00AF0ADF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78825EF72519EDAC00AF0ADF /* Jailbreak.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		78825EFC2519EDAC00AF0ADF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(MonkeyDevPath)/frameworks/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(MonkeyDevTheosPath)/vendor/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = "$(MonkeyDevTheosPath)/vendor/lib/**";
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = "-DTHEOS_INSTANCE_NAME=\"\\\"Jailbreak\\\"\"";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		78825EFD2519EDAC00AF0ADF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(MonkeyDevPath)/frameworks/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(MonkeyDevTheosPath)/vendor/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = "$(MonkeyDevTheosPath)/vendor/lib/**";
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "-DTHEOS_INSTANCE_NAME=\"\\\"Jailbreak\\\"\"";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		78825EFF2519EDAC00AF0ADF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6Y9Y56NCLP;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Jailbreak/Jailbreak-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MonkeyDevBuildPackageOnAnyBuild = NO;
+				MonkeyDevClearUiCacheOnInstall = NO;
+				MonkeyDevCopyOnBuild = NO;
+				MonkeyDevDeviceIP = "";
+				MonkeyDevDevicePassword = "";
+				MonkeyDevDevicePort = "";
+				MonkeyDevInstallOnAnyBuild = YES;
+				MonkeyDevInstallOnProfiling = YES;
+				MonkeyDevkillProcessOnInstall = SpringBoard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Jailbreak/Jailbreak-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		78825F002519EDAC00AF0ADF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6Y9Y56NCLP;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Jailbreak/Jailbreak-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MonkeyDevBuildPackageOnAnyBuild = NO;
+				MonkeyDevClearUiCacheOnInstall = NO;
+				MonkeyDevCopyOnBuild = NO;
+				MonkeyDevDeviceIP = "";
+				MonkeyDevDevicePassword = "";
+				MonkeyDevDevicePort = "";
+				MonkeyDevInstallOnAnyBuild = YES;
+				MonkeyDevInstallOnProfiling = YES;
+				MonkeyDevkillProcessOnInstall = SpringBoard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Jailbreak/Jailbreak-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		78825EDF2519EDAC00AF0ADF /* Build configuration list for PBXProject "Jailbreak" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78825EFC2519EDAC00AF0ADF /* Release */,
+				78825EFD2519EDAC00AF0ADF /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		78825EFE2519EDAC00AF0ADF /* Build configuration list for PBXNativeTarget "Jailbreak" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78825EFF2519EDAC00AF0ADF /* Release */,
+				78825F002519EDAC00AF0ADF /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 78825EDC2519EDAC00AF0ADF /* Project object */;
+}
